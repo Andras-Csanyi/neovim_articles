@@ -1,0 +1,14 @@
+union WhateverResult = WhateverSuccess | WhateverError 
+type Query {
+    getWhatever: WhateverResult!
+}
+
+type WhateverSuccess {
+    id: ID!
+    name: String!
+}
+
+type WhateverError {
+    message: String!
+}
+

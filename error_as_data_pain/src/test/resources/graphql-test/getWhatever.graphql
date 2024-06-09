@@ -1,0 +1,12 @@
+query {
+    getWhatever {
+        __typename
+        ... on WhateverSuccess {
+            id
+            name
+        }
+        ... on WhateverError {
+            message
+        }
+    }
+}
